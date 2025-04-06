@@ -6,7 +6,6 @@
 - [Introduction](#introduction)
 - [Environment](#environment)
 - [Tech Stack](#tech-stack)
-- [UI Layout](#ui-layout)
 - [How to run the application](#how-to-run-the-application)
 - [Issues](#issues)
 - [References](#references)
@@ -15,7 +14,8 @@
 
 # Introduction
 
-Vehicle Tracking System was developed using `Angular 2+` framework. The application allows the user to track, locate, and monitor vehicles on Google Maps based on the vehicle geolocation. It keeps refreshing data every 30 seconds.
+Mobile-friendly angular 2+ website developed using lazy-loading approach to enhance site-performance. CSS Grid-layout and Flexbox models were implemented to achiece the responsive UI design of this site. 
+
 
 [Back to top](#table-of-contents)
 
@@ -25,7 +25,6 @@ Vehicle Tracking System was developed using `Angular 2+` framework. The applicat
 - Angular CLI - v18.2.11
 - Visual Studio Code
 - Node.js - v20.11.1
-- Postman - testing the http methods.
 - GitHub & Git Bash
 
 [Back to top](#table-of-contents)
@@ -35,12 +34,6 @@ Vehicle Tracking System was developed using `Angular 2+` framework. The applicat
 - Angular/Typescript framework - v18.2.11
 - Fetch API - v18.2.11
 - Google Maps
-- Json server (Mock API) - v1.0.0-alpha.3
-
-[Back to top](#table-of-contents)
-
-# UI Layout
-![alt text](public/github-doc-img/UI.png)
 
 [Back to top](#table-of-contents)
 
@@ -75,19 +68,10 @@ ng serve
 ``` 
 Once the `localhost` server is running, navigate to `http://localhost:4200/` or copy/paste `http://localhost:4200/` in your browser address-bar, then press enter. 
 
-### 5. Start the Mock API server
-This application uses `json-server` Mock API to mimic real JSON RESTful services. To start json-server, run the following command:
-
-```javascript
-npm run json-server
-``` 
-For more details about Json-server, please follow [ json-server documentation](https://github.com/typicode/json-server).
-
 [Back to top](#table-of-contents)
 
 # Issues
 - The application uses Google Maps services which requires the APK Key.
-- The aplication uses JSON Server to simulate RESTful API.
 
 [Back to top](#table-of-contents)
 
