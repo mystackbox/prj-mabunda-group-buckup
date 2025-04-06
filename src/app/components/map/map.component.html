@@ -1,0 +1,26 @@
+<google-map
+  height="26vh"
+  width="100%"
+  [zoom]="zoom"
+  [center]="center"
+  [options]="options"
+  >
+
+  <map-marker
+  #markerElem ="mapMarker" 
+  [position]="markerPosition"
+  [options]="markers.options"
+  class="icon"
+>
+</map-marker>
+
+<div *ngIf="_loading == true" class="spinner-container">
+  <app-loading-spinner></app-loading-spinner>
+</div>
+</google-map>
+
+
+
+
+
+

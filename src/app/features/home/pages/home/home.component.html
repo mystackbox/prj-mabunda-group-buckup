@@ -1,0 +1,83 @@
+<div id="home-page-container" class="home-page-container">
+
+    <section class="content-title">
+        <img
+          src="banner-icons/15.png"
+          alt="Mabunda Group" 
+          class="Mabunda-Group-image responsive"
+        />
+        <div class="title-name">mabunda group</div>
+        <div (click)="redirectToContactUs()" class="btn btn-sm banner-button">
+        <fa-icon class="card-icon" [icon]="['fas', 'phone']"></fa-icon>
+        get in touch
+        </div>
+    </section>
+
+    
+    <section class="description">
+      <p>WHO ARE WE?</p>
+      <p>
+        Mabunda Group Pty. Ltd is the EHS consulting company, geared to assist the clients to comply with OHS, Environmental, Food Safety and other applicable legislation and to empower all interested and affected stakeholders.
+      </p>
+    </section>
+
+    <section class="cards-section">
+      <hr />
+      <p>AREAS OF EXPERTISE</p>
+ 
+      <div class="cards-container">
+
+        <div class="card-container card-left" (click)="redirectToOurServices()">
+          <img src="img/33.png" alt="Mabunda Group" class="card-image" />
+          <div class="card-text">Environmental Health</div>
+          <div class="card-btn btn btn-sm" (click)="redirectToOurServices()">
+            MORE
+            <fa-icon
+              class="card-icon"
+              [icon]="['fas', 'chevron-right']"
+            ></fa-icon>
+          </div>
+        </div>
+
+        <div class="card-container card-center" (click)="redirectToOurServices()">
+          <img src="img/19.png" alt="Mabunda Group" class="card-image" />
+          <div class="card-text">Environmental Safety</div>
+          <div class="card-btn btn btn-sm" (click)="redirectToOurServices()">
+            MORE
+            <fa-icon
+              class="card-icon"
+              [icon]="['fas', 'chevron-right']"
+            ></fa-icon>
+          </div>
+        </div>
+
+        <div class="card-container card-right" (click)="redirectToOurServices()">
+          <img src="img/18.png" alt="Mabunda Group" class="card-image" />
+          <div class="card-text">Engineering Services</div>
+          <div class="card-btn btn btn-sm" (click)="redirectToOurServices()">
+            MORE
+            <fa-icon
+              class="card-icon"
+              [icon]="['fas', 'chevron-right']"
+            ></fa-icon>
+          </div>
+        </div>
+
+        <div class="card-container card-right" (click)="redirectToOurServices()">
+          <img src="img/41.png" alt="Mabunda Group" class="card-image" />
+          <div class="card-text">EHS Training Services</div>
+          <div class="card-btn btn btn-sm" (click)="redirectToOurServices()">
+            MORE
+            <fa-icon
+              class="card-icon"
+              [icon]="['fas', 'chevron-right']"
+            ></fa-icon>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  
+</div>

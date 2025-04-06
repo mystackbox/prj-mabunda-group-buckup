@@ -1,0 +1,121 @@
+@use '../abstracts' as *;
+
+#services-page-container {
+
+    display: flex;
+    flex-direction: column;
+
+    //common style
+    .content-title {
+        background-image: url('/banners/3.jpg');
+        background-size: cover;
+
+        box-shadow: rgba(149, 157, 165, 0.5) 0px 0px 24px;
+        padding: 30px;
+        border: 5px solid white;
+
+        text-transform: uppercase;
+        color: #fff;
+        // padding: 40px 0;
+
+        .Mabunda-Group-image {
+            height: 100px;
+            // margin: 5px 0;
+        }
+
+        .title-name {
+            font-size: $global-font-size + 8px;
+            padding: 8px 0;
+        }
+
+        .banner-button {
+            // background-color: orange;
+            color: #fff;
+            padding: 5px 30px;
+            margin: 5px 0;
+            border: 1px solid lightgrey;
+
+            &:hover {
+                background-color: orange;
+                border-color: orange;
+            }
+        }
+    }
+
+    hr {
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .cards-section {
+        padding: 15px 0 0 0;
+        margin-top: 15px;
+
+        .cards-container {
+            // margin: 8px 15px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            gap: 10px;
+            margin-top: 10px;
+            
+
+            .card-container {
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                border-radius: 7px;
+                padding: 15px 35px;
+                text-align: center;
+
+
+                .card-image,.card-text, .card-btn {
+                    margin: 8px 0;
+                }
+                .card-image {
+                    height: 30px;
+                }
+                .card-text {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: brown;
+                }
+                .services {
+                    padding-bottom: 15px;
+                    color: grey;
+                }
+                &:hover {
+                    box-shadow: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .description {
+        padding-top: 30px;
+        margin: auto;
+        max-width: 600px;
+        font-size: $global-font-size + 1;
+    }
+}
+
+@media screen and (max-width: 530px) {
+
+    #services-page-container {
+        .cards-section {
+            .cards-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+@media (min-width: 531px) and (max-width: 767px){
+    #services-page-container {
+        .cards-section {
+            .cards-container {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    }
+}
