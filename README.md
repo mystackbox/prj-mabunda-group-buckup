@@ -1,4 +1,4 @@
-# Vehicle Tracking System
+# Mabunda Group Website
 
 ![alt text](public/github-doc-img/responsiveUI.png)
  
