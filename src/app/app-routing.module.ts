@@ -33,7 +33,7 @@ const routes: Routes = [
             (m): typeof HomeModule => m.HomeModule
           ),
         data: {
-          title: 'welcome',
+          title: 'Welcome',
           description: 'welcome to mabunda group, your ehs & engineering specialist.' 
         },
       },
