@@ -9,7 +9,7 @@ export class MetaTagService {
   constructor(private title: Title, private meta: Meta) { }
 
   updateTitle(title: string) {
-    this.title.setTitle(`V-Tracker - ${title}`);
+    this.title.setTitle(`Mabunda Group - ${title}`);
     this.meta.updateTag({ name: 'title', content: title })
   }
 
