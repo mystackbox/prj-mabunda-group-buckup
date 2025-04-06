@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Mabunda Group": {
+    "Mabunda-Group": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Mabunda Group:build:production"
+              "buildTarget": "Mabunda-Group:build:production"
             },
             "development": {
-              "buildTarget": "Mabunda Group:build:development"
+              "buildTarget": "Mabunda-Group:build:development"
             }
           },
           "defaultConfiguration": "development"
