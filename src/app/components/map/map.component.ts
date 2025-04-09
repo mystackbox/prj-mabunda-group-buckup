@@ -2,9 +2,10 @@ import { Component, ViewChild } from '@angular/core';
 import { GoogleMap, MapInfoWindow } from '@angular/google-maps';
 
 @Component({
-  selector: 'app-map',
-  templateUrl: './map.component.html',
-  styleUrl: './map.component.scss',
+    selector: 'app-map',
+    templateUrl: './map.component.html',
+    styleUrl: './map.component.scss',
+    standalone: false
 })
 export class MapComponent {
   @ViewChild(GoogleMap, { static: false }) map?: GoogleMap;

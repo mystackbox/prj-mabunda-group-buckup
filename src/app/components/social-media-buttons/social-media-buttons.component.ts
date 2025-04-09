@@ -67,9 +67,10 @@ const stickyShareButtonsConfig: StickyShareButtonsConfig = {
 };
 
 @Component({
-  selector: 'app-social-media-buttons',
-  templateUrl: './social-media-buttons.component.html',
-  styleUrl: './social-media-buttons.component.scss'
+    selector: 'app-social-media-buttons',
+    templateUrl: './social-media-buttons.component.html',
+    styleUrl: './social-media-buttons.component.scss',
+    standalone: false
 })
 export class SocialMediaButtonsComponent {
 

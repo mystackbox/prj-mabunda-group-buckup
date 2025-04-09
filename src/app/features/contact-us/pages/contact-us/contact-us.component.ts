@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-contact-us',
-  templateUrl: './contact-us.component.html',
-  styleUrl: './contact-us.component.scss'
+    selector: 'app-contact-us',
+    templateUrl: './contact-us.component.html',
+    styleUrl: './contact-us.component.scss',
+    standalone: false
 })
 export class ContactUsComponent {
 
