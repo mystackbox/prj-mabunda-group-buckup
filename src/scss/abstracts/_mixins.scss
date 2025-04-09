@@ -3,11 +3,10 @@
 @mixin page-header {
 
   text-transform: uppercase;
-  border-bottom: 1px solid lightgrey;
   
   .site-name, .page-title,
   .page-description {
-    margin: 15px 0;
+    margin: 14px 0;
   }
 
   .page-title {

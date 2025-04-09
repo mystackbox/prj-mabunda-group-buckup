@@ -13,6 +13,7 @@ import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { SocialMediaButtonsComponent } from './components/social-media-buttons/social-media-buttons.component';
+import { SharethisAngularModule } from 'sharethis-angular';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { SocialMediaButtonsComponent } from './components/social-media-buttons/s
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    SharethisAngularModule,
   ],
   providers: [
 
