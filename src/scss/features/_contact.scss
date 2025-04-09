@@ -7,30 +7,24 @@
     .header-banner {
         box-shadow: rgba(149, 157, 165, 0.5) 0px 0px 24px;
         border: 5px solid white;
-        text-transform: uppercase;
-        color: #fff;
-        max-height: 50vh;
+        height: 255px;
     }
 
     .page-content-description {
         @include page-content-description-styles;
     }
 
-    .content-section {
+    .content-section  {
         display: flex;
         flex-direction: row;
         gap: 10px;
-        margin-top: 6px;
-
-        .contact-form-container {
-            text-align: left;
-            padding: 15px 15px;
-            
-        }
+        margin-top: 25px;
 
         .contact-form-container {
             flex-grow: 2;
-            background-color: rgba(245, 245, 245, 0.3);
+            text-align: left;
+            padding: 15px 15px;
+            background-color: rgba(245, 245, 245, 0.6);
 
             .form-section-heading {
                 text-transform: uppercase;
@@ -47,7 +41,7 @@
 
             input::placeholder,
             textarea::placeholder {
-                color: lightgrey;
+                color: grey;
             }
 
             .form-control-textbox,
@@ -64,8 +58,8 @@
             }
 
             .btn {
-                border: 1px solid lightgrey;
-                color: grey;
+                border: 1px solid darkgray;
+                color: darkgray;
                 border-radius: 0px;
                 padding: 5px 30px 3px 30px;
 
@@ -89,9 +83,8 @@
             row-gap: 10px;
 
             .contact-details {
-                background-color: rgba(245, 245, 245, 0.3);
-                gap: 10px;
-                padding: 20px;
+                background-color: rgba(245, 245, 245, 0.6);
+                padding: 15px;
 
                 .contacts-heading {
                     text-transform: uppercase;
@@ -109,9 +102,25 @@
 
 @media screen and (max-width: 600px) {
     #contact-us-page-container {
-        .content-section {
+
+        .page-content-description {
+            margin: 0 20px;
+        }
+
+        .content-section  {
             display: flex;
             flex-direction: column;
+
+            .contact-form-container {
+                padding: 10px 10px;
+            }
+
+            .contact-details-container {
+                row-gap: 5px;
+                .contact-details {
+                    padding: 10px;
+                }
+            }
         }
     }
 }

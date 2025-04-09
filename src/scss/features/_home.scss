@@ -4,33 +4,35 @@
 
     @include page-container-styles;
 
-    .header-banner  {
+    .header-banner {
         background-image: url('/banners/2.jpg');
         @include header-banner-styles;
     }
 
     .page-content-description {
-     @include page-content-description-styles;
+        @include page-content-description-styles;
     }
 
-    .content-section { 
-        @include content-section-styles;
+    .content-section {
+        padding: 5px 40px;
+        margin-bottom: 20px;
 
         .cards-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            gap: 10px;
             margin-top: 20px;
-            display: flex;
-            flex-direction: row;
             justify-content: center;
-            gap: 20px;
 
             .card-container {
-
-                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                padding: 10px 5px;
                 border-radius: 7px;
-                padding: 10px;
-                text-align: center;
-                min-width: 170px;
                 margin: 5px 0;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                text-align: center;
+                min-width: 100px;
+                min-height: 16vh;
 
                 .card-image,
                 .card-text,
@@ -43,18 +45,18 @@
                 }
 
                 .card-text {
-                    font-weight: bold;
+                    text-transform: uppercase;
                 }
 
                 .card-btn {
-                    background-color: brown;
+                    background-color: orange;
                     border: none;
                     padding: 3px 20px;
                     color: #fff;
-                    min-width: 130px;
+                    min-width: 120px;
 
                     &:hover {
-                        background-color: orange;
+                        background-color: red;
                     }
                 }
 
@@ -67,16 +69,34 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
+
     #home-page-container {
+        .header-banner {
+            .Mabunda-Group-image {
+                height: 60px;
+            }
+        }
+
+        .page-content-description {
+            margin: 0 20px;
+        }
+
         .content-section {
+            margin: 0px 12px;
+            padding: 5px 0 0 0;
+
             .cards-container {
-                // display: flex;
-                flex-direction: column;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+                margin: 20 10px 0 10px;
 
                 .card-container {
+                    border-radius: 0px;
+
                     .card-btn {
-                        padding: 4px 50px;
+                        padding: 3px 20px;
+                        min-width: 100px;
                     }
                 }
             }

@@ -8,11 +8,10 @@ import {
   FontAwesomeModule,
 } from '@fortawesome/angular-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
-
+import { MapComponent } from '../../components/map/map.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { LoadingSpinnerComponent } from '../../components/loading-spinner/loading-spinner.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MapComponent } from '../../components/map/map.component';
 
 @NgModule({
   declarations: [ContactUsComponent, MapComponent, LoadingSpinnerComponent,],

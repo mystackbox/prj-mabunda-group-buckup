@@ -51,7 +51,6 @@ export class MapComponent {
    * @returns ojbects of marker (icon settings, markers settings)
    */
   markersConfig(): void {
-    console.log('being executed inside [addMarker]...');
     const icon = {
       url: '../map-icon/pin.png', // url
       scaledSize: new google.maps.Size(28, 30), // scaled size
@@ -72,6 +71,7 @@ export class MapComponent {
         icon: icon,
         content: 'Example',
         gmpClickable: true,
+        // animation: google.maps.Animation.BOUNCE,
       },
     };
 

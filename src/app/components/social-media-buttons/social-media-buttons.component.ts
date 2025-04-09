@@ -17,10 +17,10 @@ const inlineShareButtonsConfig: InlineShareButtonsConfig = {
     // 'messenger',
     'facebook',
     // 'twitter',
-    // 'email',
+    //'email',
     //'print'
   ],
-  padding: 14, // padding within buttons (INTEGER)
+  padding: 16, // padding within buttons (INTEGER)
   radius: 0, // the corner radius on each button (INTEGER)
   show_total: false,
   size: 18, // the size of each button (INTEGER)
@@ -31,7 +31,7 @@ const stickyShareButtonsConfig: StickyShareButtonsConfig = {
   alignment: 'left',    // alignment of buttons (left, right)
   color: 'white',      // set the color of buttons (social, white)
   enabled: true,        // show/hide buttons (true, false)
-  font_size: 14,        // font size for the buttons
+  font_size: 16,        // font size for the buttons
   hide_desktop: false,  // hide buttons on desktop (true, false)
   labels: 'counts',     // button labels (cta, counts, null)
   language: 'en',       // which language to use (see LANGUAGES)
@@ -42,7 +42,7 @@ const stickyShareButtonsConfig: StickyShareButtonsConfig = {
     'facebook',
     //'twitter',
     'whatsapp',
-    // 'email',
+    'email',
     //'print'
    
   ],
@@ -52,13 +52,13 @@ const stickyShareButtonsConfig: StickyShareButtonsConfig = {
   show_mobile: true,    // show/hide the buttons on mobile (true, false)
   show_toggle: false,    // show/hide the toggle buttons (true, false)
   size: 38,             // the size of each button (INTEGER)
-  top: 350,             // offset in pixels from the top of the page
+  top: 260,             // offset in pixels from the top of the page
 
 
   // OPTIONAL PARAMETERS
 
-  url: 'https://www.mabundagroup.com', // (defaults to current url)
-  image: '../github-doc-img/responsiveUI.png',  // (defaults to og:image or twitter:image)
+  url: 'https://mabundagroup.com/', // (defaults to current url)
+  image: '../assets/banners/6.jpg',  // (defaults to og:image or twitter:image)
   description: 'Hi, I would like to hear more about your services. Can we please have a discussion? Thanks.',       // (defaults to og:description or twitter:description)
   title: 'Mabunda Group',            // (defaults to og:title or twitter:title)
   message: 'Good day, I would like to hear more about your services. Can we please have a discussion? Thanks.',     // (only for email sharing)
@@ -66,13 +66,14 @@ const stickyShareButtonsConfig: StickyShareButtonsConfig = {
   username: 'custom twitter handle' // (only for twitter sharing)
 };
 
-
 @Component({
   selector: 'app-social-media-buttons',
   templateUrl: './social-media-buttons.component.html',
   styleUrl: './social-media-buttons.component.scss'
 })
 export class SocialMediaButtonsComponent {
+
   inlineShareButtonsConfig = inlineShareButtonsConfig;
-  stickButton = stickyShareButtonsConfig;
+  stickButton = stickyShareButtonsConfig; 
+
 }
