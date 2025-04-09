@@ -66,7 +66,7 @@ export class MapComponent {
         color: 'orange',
         fontWeight: 'bold',
         fontSize: '14px',
-        text: 'vehicle',
+        text: 'Address',
       },
 
       options: {
@@ -74,7 +74,6 @@ export class MapComponent {
         icon: icon,
         content: 'Example',
         gmpClickable: true,
-        // animation: google.maps.Animation.BOUNCE,
       },
     };
 
