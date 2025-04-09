@@ -4,15 +4,12 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-about-us',
   templateUrl: './about-us.component.html',
-  styleUrl: './about-us.component.scss'
+  styleUrl: './about-us.component.scss',
 })
 export class AboutUsComponent {
+  constructor(private router: Router) {}
 
-     constructor(private router: Router) {}
-  
-    redirectToContactUs() {
-      this.router.navigate(['/contact-us']);
-    }
-  
-
+  redirectToContactUs() {
+    this.router.navigate(['/contact-us']);
+  }
 }
