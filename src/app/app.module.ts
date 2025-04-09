@@ -12,7 +12,8 @@ import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
 
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
-import { VehicleService } from './shared/services/vehicle/vehicle.service';
+import { SocialMediaButtonsComponent } from './components/social-media-buttons/social-media-buttons.component';
+import { SharethisAngularModule } from 'sharethis-angular';
 
 @NgModule({
   declarations: [
@@ -21,14 +22,15 @@ import { VehicleService } from './shared/services/vehicle/vehicle.service';
     HeaderComponent,
     FooterComponent,
     NavBarComponent,
+    SocialMediaButtonsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    SharethisAngularModule,
   ],
   providers: [
-    VehicleService,
 
     //Url requests - structure
     {

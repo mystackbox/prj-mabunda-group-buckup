@@ -151,17 +151,17 @@ body {
   margin: 0 auto;
   padding: 10px 0;
 }
-#home-page-container .cards-section {
+#home-page-container .content-section {
   padding: 15px 0;
 }
-#home-page-container .cards-section .cards-container {
+#home-page-container .content-section .cards-container {
   margin-bottom: 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 30px;
 }
-#home-page-container .cards-section .cards-container .card-container {
+#home-page-container .content-section .cards-container .card-container {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 7px;
   padding: 10px;
@@ -169,29 +169,29 @@ body {
   min-width: 20%;
   margin-bottom: 5px;
 }
-#home-page-container .cards-section .cards-container .card-container .card-image,
-#home-page-container .cards-section .cards-container .card-container .card-text,
-#home-page-container .cards-section .cards-container .card-container .card-btn {
+#home-page-container .content-section .cards-container .card-container .card-image,
+#home-page-container .content-section .cards-container .card-container .card-text,
+#home-page-container .content-section .cards-container .card-container .card-btn {
   margin: 5px 0;
 }
-#home-page-container .cards-section .cards-container .card-container .card-image {
+#home-page-container .content-section .cards-container .card-container .card-image {
   height: 35px;
 }
-#home-page-container .cards-section .cards-container .card-container .card-text {
+#home-page-container .content-section .cards-container .card-container .card-text {
   font-weight: bold;
   min-height: 35px;
 }
-#home-page-container .cards-section .cards-container .card-container .card-btn {
+#home-page-container .content-section .cards-container .card-container .card-btn {
   background-color: orange;
   border: none;
   padding: 3px 20px;
   color: #fff;
   min-width: 60px;
 }
-#home-page-container .cards-section .cards-container .card-container .card-btn:hover {
+#home-page-container .content-section .cards-container .card-container .card-btn:hover {
   background-color: brown;
 }
-#home-page-container .cards-section .cards-container .card-container:hover {
+#home-page-container .content-section .cards-container .card-container:hover {
   box-shadow: none;
   cursor: pointer;
 }
@@ -202,11 +202,11 @@ body {
 }
 
 @media screen and (max-width: 390px) {
-  #home-page-container .cards-section .cards-container {
+  #home-page-container .content-section .cards-container {
     display: flex;
     flex-direction: column;
   }
-  #home-page-container .cards-section .cards-container .card-container .card-btn {
+  #home-page-container .content-section .cards-container .card-container .card-btn {
     padding: 4px 20px;
   }
 }

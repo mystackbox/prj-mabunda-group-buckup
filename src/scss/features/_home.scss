@@ -2,72 +2,37 @@
 
 #home-page-container {
 
-    display: flex;
-    flex-direction: column;
+    @include page-container-styles;
 
-    //common style
-    .content-title {
-        background-image: url('/banners/50.jpg');
-        background-size: cover;
-
-        box-shadow: rgba(149, 157, 165, 0.5) 0px 0px 24px;
-        padding: 30px;
-        border: 5px solid white;
-
-        text-transform: uppercase;
-        color: #fff;
-        // padding: 40px 0;
-
-        .Mabunda-Group-image {
-            height: 100px;
-            // margin: 5px 0;
-        }
-
-        .title-name {
-            font-size: $global-font-size + 8px;
-            padding: 8px 0;
-        }
-
-        .banner-button {
-            // background-color: orange;
-            color: #fff;
-            padding: 5px 30px;
-            margin: 5px 0;
-            border: 1px solid lightgrey;
-
-            &:hover {
-                background-color: orange;
-                border-color: orange;
-            }
-        }
+    .header-banner {
+        background-image: url('/banners/2.jpg');
+        @include header-banner-styles;
     }
 
-    hr {
-        width: 80%;
-        margin: 0 auto;
-        padding: 10px 0;
+    .page-content-description {
+        @include page-content-description-styles;
     }
 
-    .cards-section {
-        
-        padding: 20px 0;
+    .content-section {
+        padding: 5px 40px;
         margin-bottom: 20px;
 
         .cards-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            gap: 10px;
             margin-top: 20px;
-            display: flex;
-            flex-direction: row;
             justify-content: center;
-            gap: 20px;
 
             .card-container {
-
-                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                padding: 10px 5px;
                 border-radius: 7px;
-                padding: 10px;
-                text-align: center;
-                min-width: 170px;
                 margin: 5px 0;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                text-align: center;
+                min-width: 100px;
+                min-height: 16vh;
 
                 .card-image,
                 .card-text,
@@ -80,18 +45,18 @@
                 }
 
                 .card-text {
-                    font-weight: bold;
+                    text-transform: uppercase;
                 }
 
                 .card-btn {
-                    background-color: brown;
+                    background-color: orange;
                     border: none;
                     padding: 3px 20px;
                     color: #fff;
-                    min-width: 130px;
+                    min-width: 120px;
 
                     &:hover {
-                        background-color: orange;
+                        background-color: red;
                     }
                 }
 
@@ -102,26 +67,36 @@
             }
         }
     }
-
-    .description {
-        padding-top: 30px;
-        margin: auto;
-        max-width: 600px;
-        font-size: $global-font-size + 1;
-    }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 
     #home-page-container {
-        .cards-section {
+        .header-banner {
+            .Mabunda-Group-image {
+                height: 60px;
+            }
+        }
+
+        .page-content-description {
+            margin: 0 20px;
+        }
+
+        .content-section {
+            margin: 0px 12px;
+            padding: 5px 0 0 0;
+
             .cards-container {
-                // display: flex;
-                flex-direction: column;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+                margin: 20 10px 0 10px;
 
                 .card-container {
+                    border-radius: 0px;
+
                     .card-btn {
-                        padding: 4px 50px;
+                        padding: 3px 20px;
+                        min-width: 100px;
                     }
                 }
             }

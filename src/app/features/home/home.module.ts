@@ -10,8 +10,12 @@ import {
 import { fas } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
-  declarations: [HomeComponent],
-  imports: [CommonModule, HomeRoutingModule, FontAwesomeModule],
+  declarations: [HomeComponent, ],
+  imports: [
+    CommonModule,
+    HomeRoutingModule,
+    FontAwesomeModule,    
+  ],
 })
 export class HomeModule {
   //for Font-Awesome to be accessible globally

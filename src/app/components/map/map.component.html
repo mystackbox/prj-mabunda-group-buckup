@@ -1,5 +1,5 @@
 <google-map
-  height="26vh"
+  height="100%"
   width="100%"
   [zoom]="zoom"
   [center]="center"
@@ -8,6 +8,7 @@
 
   <map-marker
   #markerElem ="mapMarker" 
+  [label]="label"
   [position]="markerPosition"
   [options]="markers.options"
   class="icon"

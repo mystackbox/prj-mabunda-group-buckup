@@ -19,6 +19,11 @@
 @media screen and (max-width: 992px) {
 
     .navbar {
+
+        .navbar-brand  {
+            font-weight: bold;
+        }
+
         button {
             margin-bottom: 5px;
         }
