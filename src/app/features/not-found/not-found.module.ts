@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { NotFoundRoutingModule } from './not-found-routing.module';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
   ],
   imports: [
     CommonModule,
-    NotFoundRoutingModule
+    NotFoundRoutingModule,
+    FontAwesomeModule
   ]
 })
 export class NotFoundModule { }
