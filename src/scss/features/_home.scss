@@ -2,56 +2,19 @@
 
 #home-page-container {
 
-    display: flex;
-    flex-direction: column;
+    @include page-container-styles;
 
-    //common style
-    .content-title {
-        background-image: url('/banners/50.jpg');
-        background-size: cover;
-
-        box-shadow: rgba(149, 157, 165, 0.5) 0px 0px 24px;
-        padding: 30px;
-        border: 5px solid white;
-
-        text-transform: uppercase;
-        color: #fff;
-        // padding: 40px 0;
-
-        .Mabunda-Group-image {
-            height: 100px;
-            // margin: 5px 0;
-        }
-
-        .title-name {
-            font-size: $global-font-size + 8px;
-            padding: 8px 0;
-        }
-
-        .banner-button {
-            // background-color: orange;
-            color: #fff;
-            padding: 5px 30px;
-            margin: 5px 0;
-            border: 1px solid lightgrey;
-
-            &:hover {
-                background-color: orange;
-                border-color: orange;
-            }
-        }
+    .header-banner  {
+        background-image: url('/banners/2.jpg');
+        @include header-banner-styles;
     }
 
-    hr {
-        width: 80%;
-        margin: 0 auto;
-        padding: 10px 0;
+    .page-content-description {
+     @include page-content-description-styles;
     }
 
-    .cards-section {
-        
-        padding: 20px 0;
-        margin-bottom: 20px;
+    .content-section { 
+        @include content-section-styles;
 
         .cards-container {
             margin-top: 20px;
@@ -102,19 +65,11 @@
             }
         }
     }
-
-    .description {
-        padding-top: 30px;
-        margin: auto;
-        max-width: 600px;
-        font-size: $global-font-size + 1;
-    }
 }
 
 @media screen and (max-width: 480px) {
-
     #home-page-container {
-        .cards-section {
+        .content-section {
             .cards-container {
                 // display: flex;
                 flex-direction: column;
