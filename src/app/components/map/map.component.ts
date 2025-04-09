@@ -1,7 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { VehicleService } from '../../shared/services/vehicle/vehicle.service';
 import { GoogleMap, MapInfoWindow } from '@angular/google-maps';
-import { PassDataService } from '../../shared/services/passData/pass-data.service';
 
 @Component({
   selector: 'app-map',
